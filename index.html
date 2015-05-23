@@ -1,0 +1,25 @@
+---
+layout: default
+permalink: /
+title: Calendario
+---
+
+{% for year in site.data.calendar %}
+    {{ year | first }}<br />
+    
+    {% assign y = year | last %}
+    {% for month in y %}
+        <b>Mes {{ month | first | first }}</b><br />
+        
+        {% assign m = month | first | last %}
+        {% for day in m %}
+            {% assign d = day | first | last %}
+            {% for event in d %}
+                {{ event.name }} en
+                {{ event.place }} de
+                {{ event.start }} a
+                {{ event.end }}
+            {% endfor %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}

@@ -1,0 +1,8 @@
+2015:
+  - 5: # Mayo
+  - 6: # Junio
+    - 11:
+      - name: "Ingeniería de Servidores"
+        start: "10:00"
+        end: "12:30"
+        place: "1.1"
