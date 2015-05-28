@@ -5,21 +5,29 @@ title: Calendario
 ---
 
 {% for year in site.data.calendar %}
-    {{ year | first }}<br />
+    <h2>{{ year | first }}</h2>
     
     {% assign y = year | last %}
     {% for month in y %}
-        <b>Mes {{ month | first | first }}</b><br />
+        {% assign monnum = month | first | first %}
+        <h3>{{ site.data.names[monnum] }}</h3>
         
         {% assign m = month | first | last %}
         {% for day in m %}
             {% assign d = day | first | last %}
-            {% for event in d %}
-                {{ event.name }} en
-                {{ event.place }} de
-                {{ event.start }} a
-                {{ event.end }}
-            {% endfor %}
+            <p>
+                <strong>{{ day | first | first }}</strong>
+                <ul>
+                    {% for event in d %}
+                        <li>
+                            {{ event.name }} en
+                            {{ event.place }} de
+                            {{ event.start }} a
+                            {{ event.end }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </p>
         {% endfor %}
     {% endfor %}
 {% endfor %}

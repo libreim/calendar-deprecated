@@ -1,8 +1,44 @@
 2015:
   - 5: # Mayo
   - 6: # Junio
+    - 3:
+      - name: "(3º) Parcial Álgebra II"
+        start: "18:00"
+        end: "20:00"
+        place: "A-14 (Ciencias)"
+    - 8:
+      - name: "(3º) Métodos Numéricos II"
+        start: "9:30"
+        end: "12:30"
+        place: "G-1 (Ciencias)"
     - 11:
-      - name: "Ingeniería de Servidores"
+      - name: "(3º) Ingeniería de Servidores"
         start: "10:00"
         end: "12:30"
-        place: "1.1"
+        place: "1.1 (ETSIIT)"
+    - 16:
+      - name: "(3º) Álgebra II"
+        start: "16:00"
+        end: "(?)"
+        place: "Ciencias"
+    - 19:
+      - name: "(3º) Inteligencia Artificial (problemas)"
+        start: "9:00"
+        end: "(?)"
+        place: "ETSIIT"
+    - 24:
+      - name: "(3º) Sistemas Concurrentes y Distribuidos (tema 3.4)"
+        start: "9:00"
+        end: "(?)"
+        place: "ETSIIT"
+    - 29:
+      - name: "(3º) Métodos Numéricos II"
+        start: "16:00"
+        end: "(?)"
+        place: "Ciencias"
+  - 7: # Julio
+    - 9:
+      - name: "(3º) Variable Compleja"
+        start: "9:00"
+        end: "(?)"
+        place: "Ciencias"
