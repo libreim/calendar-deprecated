@@ -3,6 +3,23 @@ layout: default
 permalink: /
 title: Calendario
 ---
+<style>
+    .place, .time {
+        display: inline-block;
+        padding: .4em .6em;
+        min-width: 8em;
+        text-align: center;
+        background: #dadada;
+        color: #333;
+    }
+    .time {
+        background: #6789AB;
+        color: #fff;
+    }
+    .event {
+        
+    }
+</style>
 
 {% for year in site.data.calendar %}
     <h2>{{ year | first }}</h2>
@@ -17,16 +34,16 @@ title: Calendario
             {% assign d = day | first | last %}
             <p>
                 <strong>{{ day | first | first }}</strong>
-                <ul>
-                    {% for event in d %}
-                        <li>
-                            {{ event.name }} en
-                            {{ event.place }} de
-                            {{ event.start }} a
+                {% for event in d %}
+                    <p>
+                        <span class="time">
+                            {{ event.start }} - 
                             {{ event.end }}
-                        </li>
-                    {% endfor %}
-                </ul>
+                        </span>
+                        <span class="place">{{ event.place }}</span>
+                        <span class="event">{{ event.name }}</span>
+                    </p>
+                {% endfor %}
             </p>
         {% endfor %}
     {% endfor %}
