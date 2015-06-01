@@ -8,7 +8,7 @@
         end: "20:00"
         place: "A-14 (Ciencias)"
     - 7:
-      - name: "Ejecicio: Ecuaciones de Lorenz"
+      - name: "Ejercicio: Ecuaciones de Lorenz"
         subject: "Métodos Numéricos II"
     - 8:
       - name: "Final"
