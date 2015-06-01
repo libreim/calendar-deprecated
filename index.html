@@ -41,17 +41,19 @@ title: Calendario
                 <strong>{{ day | first | first }}</strong>
                 {% for event in d %}
                     <p>
-                        <span class="time">
-                            {% if event.start %}
-                                {{ event.start }}
-                            {% endif %}
-                            {% if event.start and event.end %}
-                                 -
-                            {% endif %}
-                            {% if event.end %}
-                                {{ event.end }}
-                            {% endif %}
-                        </span>
+                        {% if event.start or event.end %}
+                            <span class="time">
+                                {% if event.start %}
+                                    {{ event.start }}
+                                {% endif %}
+                                {% if event.start and event.end %}
+                                     -
+                                {% endif %}
+                                {% if event.end %}
+                                    {{ event.end }}
+                                {% endif %}
+                            </span>
+                        {% endif %}
                         {% if event.place %}
                             <span class="place">{{ event.place }}</span>
                         {% endif %}
