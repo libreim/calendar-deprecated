@@ -4,7 +4,7 @@ permalink: /
 title: Calendario
 ---
 <style>
-    .place, .time {
+    .place, .time, .subject {
         display: inline-block;
         padding: .4em .6em;
         min-width: 8em;
@@ -16,19 +16,23 @@ title: Calendario
         background: #6789AB;
         color: #fff;
     }
+    .subject {
+        background: #6767AB;
+        color: #fff;
+    }
     .event {
-        
+
     }
 </style>
 
 {% for year in site.data.calendar %}
     <h2>{{ year | first }}</h2>
-    
+
     {% assign y = year | last %}
     {% for month in y %}
         {% assign monnum = month | first | first %}
         <h3>{{ site.data.names[monnum] }}</h3>
-        
+
         {% assign m = month | first | last %}
         {% for day in m %}
             {% assign d = day | first | last %}
@@ -37,10 +41,11 @@ title: Calendario
                 {% for event in d %}
                     <p>
                         <span class="time">
-                            {{ event.start }} - 
+                            {{ event.start }} -
                             {{ event.end }}
                         </span>
                         <span class="place">{{ event.place }}</span>
+                        <span class="subject">{{ event.subject }}</span>
                         <span class="event">{{ event.name }}</span>
                     </p>
                 {% endfor %}
