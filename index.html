@@ -19,6 +19,7 @@ title: Calendario
     .subject {
         background: #6767AB;
         color: #fff;
+        margin-right: .6em;
     }
     .event {
 
@@ -41,12 +42,25 @@ title: Calendario
                 {% for event in d %}
                     <p>
                         <span class="time">
-                            {{ event.start }} -
-                            {{ event.end }}
+                            {% if event.start %}
+                                {{ event.start }}
+                            {% endif %}
+                            {% if event.start and event.end %}
+                                 -
+                            {% endif %}
+                            {% if event.end %}
+                                {{ event.end }}
+                            {% endif %}
                         </span>
-                        <span class="place">{{ event.place }}</span>
-                        <span class="subject">{{ event.subject }}</span>
-                        <span class="event">{{ event.name }}</span>
+                        {% if event.place %}
+                            <span class="place">{{ event.place }}</span>
+                        {% endif %}
+                        {% if event.subject %}
+                            <span class="subject">{{ event.subject }}</span>
+                        {% endif %}
+                        {% if event.name %}
+                            <span class="event">{{ event.name }}</span>
+                        {% endif %}
                     </p>
                 {% endfor %}
             </p>
