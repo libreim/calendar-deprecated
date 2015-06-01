@@ -7,12 +7,22 @@
         start: "18:00"
         end: "20:00"
         place: "A-14 (Ciencias)"
+    - 7:
+      - name: "Ejecicio: Ecuaciones de Lorenz"
+        subject: "Métodos Numéricos II"
     - 8:
       - name: "Final"
         subject: "Métodos Numéricos II"
         start: "9:30"
         end: "12:30"
         place: "G-1 (Ciencias)"
+      - name: "Defensa de la práctica de MPI"
+        subject: "Sistemas Concurrentes y Distribuidos"
+    - 9:
+      - name: "Test de temas 5 y 6"
+        subject: "Inteligencia Artificial"
+      - name: "Entrega Práctica 5"
+        subject: "Ingeniería de Servidores"
     - 11:
       - name: "Final"
         subject: "Ingeniería de Servidores"
