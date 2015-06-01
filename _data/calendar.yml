@@ -2,43 +2,51 @@
   # - 5: # Mayo
   - 6: # Junio
     - 3:
-      - name: "(3º) Parcial Álgebra II"
+      - name: "Parcial temas 5 a 7"
+        subject: "Álgebra II"
         start: "18:00"
         end: "20:00"
         place: "A-14 (Ciencias)"
     - 8:
-      - name: "(3º) Métodos Numéricos II"
+      - name: "Final"
+        subject: "Métodos Numéricos II"
         start: "9:30"
         end: "12:30"
         place: "G-1 (Ciencias)"
     - 11:
-      - name: "(3º) Ingeniería de Servidores"
+      - name: "Final"
+        subject: "Ingeniería de Servidores"
         start: "10:00"
         end: "12:30"
         place: "1.1 (ETSIIT)"
     - 16:
-      - name: "(3º) Álgebra II"
+      - name: "Final"
+        subject: "Álgebra II"
         start: "16:00"
         end: "(?)"
         place: "Ciencias"
     - 19:
-      - name: "(3º) Inteligencia Artificial (problemas)"
+      - name: "Examen de problemas"
+        subject: "Inteligencia Artificial"
         start: "9:00"
         end: "(?)"
         place: "ETSIIT"
     - 24:
-      - name: "(3º) Sistemas Concurrentes y Distribuidos (tema 3.4)"
+      - name: "Examen del tema 3.4"
+        subject: "Sistemas Concurrentes y Distribuidos"
         start: "9:00"
         end: "(?)"
         place: "ETSIIT"
     - 29:
-      - name: "(3º) Métodos Numéricos II"
+      - name: "Examen Final"
+        subject: "Métodos Numéricos II"
         start: "16:00"
         end: "(?)"
         place: "Ciencias"
   - 7: # Julio
     - 9:
-      - name: "(3º) Variable Compleja"
+      - name: "Examen Final"
+        subject: "Variable Compleja"
         start: "9:00"
         end: "(?)"
         place: "Ciencias"
