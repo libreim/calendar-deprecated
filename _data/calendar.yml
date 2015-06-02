@@ -11,10 +11,10 @@
       - name: "Ejercicio: Ecuaciones de Lorenz"
         subject: "Métodos Numéricos II"
     - 8:
-      - name: "Final"
+      - name: "Final adelantado"
         subject: "Métodos Numéricos II"
         start: "9:30"
-        end: "12:30"
+        end: "12:00"
         place: "G-1 (Ciencias)"
       - name: "Defensa de la práctica de MPI"
         subject: "Sistemas Concurrentes y Distribuidos"
@@ -50,9 +50,9 @@
     - 29:
       - name: "Examen Final"
         subject: "Métodos Numéricos II"
-        start: "16:00"
-        end: "(?)"
-        place: "Ciencias"
+        start: "9:00"
+        end: "12:00"
+        place: "M-01 (Ciencias)"
   - 7: # Julio
     - 9:
       - name: "Examen Final"
