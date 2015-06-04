@@ -42,11 +42,11 @@
         end: "(?)"
         place: "ETSIIT"
     - 24:
-      - name: "Examen del tema 3.4"
+      - name: "Examen del tema 3 sección 3 y ampliación tema 3"
         subject: "Sistemas Concurrentes y Distribuidos"
-        start: "9:00"
-        end: "(?)"
-        place: "ETSIIT"
+        start: "10:00"
+        end: "12:00"
+        place: "0.2 (ETSIIT)"
     - 29:
       - name: "Examen Final"
         subject: "Métodos Numéricos II"
