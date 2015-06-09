@@ -32,9 +32,9 @@
     - 16:
       - name: "Final"
         subject: "Álgebra II"
-        start: "16:00"
-        end: "(?)"
-        place: "Ciencias"
+        start: "9:00"
+        end: "12:30"
+        place: "M01 (Ciencias)"
     - 19:
       - name: "Examen de problemas"
         subject: "Inteligencia Artificial"
