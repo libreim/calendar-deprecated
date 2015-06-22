@@ -52,7 +52,7 @@
         subject: "Métodos Numéricos II"
         start: "9:00"
         end: "12:00"
-        place: "M-01 (Ciencias)"
+        place: "A-22 (Ciencias)"
   - 7: # Julio
     - 9:
       - name: "Examen Final"
