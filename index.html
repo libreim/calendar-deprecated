@@ -26,46 +26,11 @@ title: Calendario
     }
 </style>
 
-{% for year in site.data.calendar %}
-    <h2>{{ year | first }}</h2>
-
-    {% assign y = year | last %}
-    {% for month in y %}
-        {% assign monnum = month | first | first %}
-        <h3>{{ site.data.names[monnum] }}</h3>
-
-        {% assign m = month | first | last %}
-        {% for day in m %}
-            {% assign d = day | first | last %}
-            <p>
-                <strong>{{ day | first | first }}</strong>
-                {% for event in d %}
-                    <p>
-                        {% if event.start or event.end %}
-                            <span class="time">
-                                {% if event.start %}
-                                    {{ event.start }}
-                                {% endif %}
-                                {% if event.start and event.end %}
-                                     -
-                                {% endif %}
-                                {% if event.end %}
-                                    {{ event.end }}
-                                {% endif %}
-                            </span>
-                        {% endif %}
-                        {% if event.place %}
-                            <span class="place">{{ event.place }}</span>
-                        {% endif %}
-                        {% if event.subject %}
-                            <span class="subject">{{ event.subject }}</span>
-                        {% endif %}
-                        {% if event.name %}
-                            <span class="event">{{ event.name }}</span>
-                        {% endif %}
-                    </p>
-                {% endfor %}
-            </p>
-        {% endfor %}
-    {% endfor %}
-{% endfor %}
+<div class="span3">
+	<h3>Calendario</h3>
+<div id="upcoming"></div><!--/span-->
+</div>
+<div class="span9">
+	<h3>Calendario de Prueba</h3>
+<iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=nho3sccg0bkli0i9sn9e9s2ln4%40group.calendar.google.com&amp;color=%23875509&amp;ctz=Europe%2FMadrid" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div><!--/span-->
